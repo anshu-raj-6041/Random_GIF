@@ -3,15 +3,15 @@ import Tag from './components/Tag';
 
 export default function App() {
   return (
-    <div className='w-full h-screen flex flex-col background relative overflow-x-hidden items-center'>
+    <div className='w-full min-h-screen flex flex-col background relative overflow-x-hidden items-center px-4 sm:px-6 md:px-8'>
+      <h1 className='bg-white rounded-lg text-center mt-10 px-6 py-3 text-2xl sm:text-3xl md:text-4xl w-full max-w-xl font-bold'>
+        Random GIFs
+      </h1>
 
-      <h1 className='bg-white rounded-lg text-center mt-[40px]  px-10 py-2 text-4xl w-11/12 font-bold'>Random GIFS</h1>
-
-      <div className='flex flex-col w-full items-center gap-y-10 mt-[30px]'>
+      <div className='flex flex-col w-full items-center gap-y-6 mt-8 sm:mt-12'>
         <Random />
         <Tag />
       </div>
-
     </div>
   );
 }
